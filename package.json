@@ -1,0 +1,31 @@
+{
+  "name": "@kauabunga/moleculer-hello-world",
+  "version": "1.0.0",
+  "description": "Example moleculer application",
+  "main": "bin/www",
+  "scripts": {
+    "start": "node bin/www",
+    "test": "jest",
+    "nats": "docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -ti nats:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kauabunga/moleculer-hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kauabunga/moleculer-hello-world/issues"
+  },
+  "homepage": "https://github.com/Kauabunga/moleculer-hello-world#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moleculer": "^0.14.11",
+    "moleculer-web": "^0.9.1",
+    "nats": "^1.4.12"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3",
+    "supertest": "^5.0.0"
+  }
+}

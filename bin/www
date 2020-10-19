@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const express = require('express');
+const PORT = Number.parseInt(process.env.PORT || 3333, 10);
+
+const [broker, gatewayService] = require('../index.js');
+
+const app = express();
+
+app.use('/', gatewayService.express());
+
+app.listen(PORT, (err) => {
+  if (err) return console.error(err);
+  console.log('Open http://localhost:3333/api/hi?name=Moleculer');
+});
+
+// Start server
+broker.start();
