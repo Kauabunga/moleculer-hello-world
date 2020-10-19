@@ -20,9 +20,11 @@
   "homepage": "https://github.com/Kauabunga/moleculer-hello-world#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "fetch-mock": "^9.10.7",
     "moleculer": "^0.14.11",
     "moleculer-web": "^0.9.1",
-    "nats": "^1.4.12"
+    "nats": "^1.4.12",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "jest": "^26.5.3",

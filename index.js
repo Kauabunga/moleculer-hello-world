@@ -3,7 +3,7 @@ const ApiGatewayService = require('moleculer-web');
 
 // Create broker
 const broker = new ServiceBroker({
-  transporter: 'NATS',
+  // transporter: 'NATS',
 });
 
 // Load test service
